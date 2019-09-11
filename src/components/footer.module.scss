@@ -1,0 +1,12 @@
+.social {
+  list-style: none;
+  padding-left: 0;
+}
+
+.socialLink {
+  display: inline-block;
+}
+
+.socialLink:not(:last-child) {
+  margin-right: 2rem;
+}

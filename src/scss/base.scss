@@ -1,9 +1,119 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:900|Open+Sans&display=swap');
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
 
-html, body {
-  font-family: 'Open Sans', sans-serif;
+$black: #0f1215 !default;
+$white: #fff;
+$purp: #21202d;
+$teal: #9df1f2;
+$pink: #fb91dd;
+$pink-dark: darken($pink, 10%);
+$lavendar: #f099f9;
+$lavendar-dark: darken($lavendar, 20%);
+$slate-blue: #1d4b5a;
+$yellow: #d0b23b;
+$yellow-dark: darken($yellow, 20%);
+$yellow-green: #cfd683;
+$yellow-green-dark: darken($yellow-green, 20%);
+
+$transition-duration: 150ms;
+
+@import './partials/_bootstrap_base.scss';
+
+// Base styles
+//
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Merriweather', serif;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  transition: color 250ms ease-out, background-color 250ms ease-out;
+}
+
+a.curtains {
+  padding: 2px 2px 0;
+  transition: color $transition-duration ease-out,
+    background-color $transition-duration ease-out,
+    box-shadow $transition-duration ease-out;
+  box-shadow: $link-color 0 0px inset, $link-color 0 2px;
+
+  &:hover {
+    color: $white;
+    box-shadow: $pink-dark 0 30px inset, $pink-dark 0 2px;
+  }
+}
+
+img {
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.work {
+  margin-bottom: 2rem;
+
+  a .gatsby-image-wrapper {
+    outline: 0 solid $pink-dark;
+    transition: outline $transition-duration linear;
+  }
+
+  a:hover .gatsby-image-wrapper {
+    outline-width: 8px;
+  }
+
+  figcaption {
+    h3 {
+      font-size: 1.4rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.job {
+  margin-bottom: 2.5rem;
+  h3 {
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+  }
+
+  time {
+    display: block;
+    font-size: 1rem;
+  }
+
+  ul {
+
+  }
+}
+
+main {
+  // border: 20px solid $teal;
+  // border-radius: 5rem;
+  // margin: 2rem 0;
+
+  // &:before {
+  //   content: '';
+  //   border: 20px solid red;
+  // }
 }
