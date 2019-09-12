@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -47,6 +48,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: 'og:image',
+          content: `${site.siteMetadata.siteUrl}/images/jared-zoom.jpg`,
         },
         {
           property: `og:type`,

@@ -3,6 +3,7 @@ module.exports = {
     title: `Jared Moran`,
     description: `This is my personal portfolio. I'm an engineer based in Visalia, California USA.`,
     author: `@jaredmoran`,
+    siteUrl: `https://jaredmoran.com`
   },
   plugins: [
     {
