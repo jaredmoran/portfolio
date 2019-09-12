@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Jared Moran <jared.moran@gmail.com>",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "gatsby": "^2.10.4",
     "gatsby-image": "^2.2.3",
     "gatsby-plugin-manifest": "^2.2.0",

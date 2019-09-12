@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <main className="container">
+      <main className="container animated fadeIn">
         <section className="py-5">
           {children}
         </section>
