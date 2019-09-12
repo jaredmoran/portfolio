@@ -73,6 +73,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: 'twitter:image',
+          content: `${site.siteMetadata.siteUrl}/images/jared-zoom.jpg`,
+        }
       ].concat(meta)}
       link={[
         { rel: 'shortcut icon', type: 'image/x-icon', href: `${favicon}` },
