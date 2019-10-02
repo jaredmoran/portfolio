@@ -167,7 +167,7 @@ const IndexPage = () => {
         <small className="mt-4 d-block">
           All work listed here has been completed via{" "}
           <a
-            href="http://penso.co"
+            href="https://penso.co"
             target="_blank"
             rel="noopener noreferrer"
             className="curtains"
@@ -188,7 +188,7 @@ const IndexPage = () => {
         <time>2018-Present</time>
         <p>
           <a
-            href="http://penso.co"
+            href="https://penso.co"
             target="_blank"
             rel="noopener noreferrer"
             className="curtains"
