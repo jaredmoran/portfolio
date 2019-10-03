@@ -31,6 +31,15 @@ const IndexPage = () => {
           }
         }
       }
+      pensoCoImage: file(
+        relativePath: { eq: "pensoco-thumbnail.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 600, cropFocus: NORTH) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
     }
   `)
 
@@ -68,7 +77,37 @@ const IndexPage = () => {
       <h2 className="mt-5 pt-5 mb-4">Recent Work</h2>
 
       <div className="row">
-        <div className="work col-md">
+      <div className="work col-md-6">
+          <a
+            href="https://penso.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              fluid={{
+                ...workData.pensoCoImage.childImageSharp.fluid,
+                aspectRatio: 4 / 3,
+              }}
+            />
+          </a>
+          <figcaption>
+            <h3>Penso Co.</h3>
+            <p>
+              New portofolio site to showcase new work, a new studio, and some new faces.
+            </p>
+            <p>
+              <a
+                href="https://penso.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="curtains"
+              >
+                Visit Site
+              </a>
+            </p>
+          </figcaption>
+        </div>
+        <div className="work col-md-6">
           <a
             href="https://raheem.org"
             target="_blank"
@@ -99,7 +138,7 @@ const IndexPage = () => {
             </p>
           </figcaption>
         </div>
-        <div className="work col-md">
+        <div className="work col-md-6">
           <a
             href="https://teachingbooks.net"
             target="_blank"
@@ -130,7 +169,7 @@ const IndexPage = () => {
             </p>
           </figcaption>
         </div>
-        <div className="work col-md">
+        <div className="work col-md-6">
           <a
             href="https://ridereport.com"
             target="_blank"
