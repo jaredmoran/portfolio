@@ -128,7 +128,7 @@ img {
   left: -28%;
   width: 33%;
   height: 90%;
-  transform: skewX(-10deg);
+  transform: skewX(-13deg);
   transform-origin: bottom right;
 
   &:before,
@@ -166,7 +166,7 @@ img {
   right: -28%;
   width: 33%;
   height: 90%;
-  transform: skewX(10deg);
+  transform: skewX(13deg);
   transform-origin: bottom left;
 
   &:before,
@@ -218,11 +218,11 @@ img {
   }
   &:before {
     left: calc(-28% - 3px);
-    transform: skewX(-10deg);
+    transform: skewX(-13deg);
   }
   &:after {
     right: calc(-28% - 3px);
-    transform: skewX(10deg);
+    transform: skewX(13deg);
   }
 
   @include media-breakpoint-up(md) {
