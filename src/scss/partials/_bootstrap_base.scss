@@ -18,18 +18,18 @@ $enable-responsive-font-sizes: true !default;
 
 // Grid containers
 //
-// $container-max-widths: (
-//   sm: 540px,
-//   md: 640px,
-//   lg: 1142px,
-//   xl: 1600px,
-// ) !default;
+$container-max-widths: (
+  sm: 540px,
+  md: 640px,
+  lg: 900px,
+  xl: 1100px,
+) !default;
 
 // $grid-gutter-width: 20px !default;
 
 // Body
 //
-$body-bg: $slate-blue !default;
+$body-bg: $purp-dark !default;
 $body-color: $white !default;
 
 // Links
@@ -65,7 +65,7 @@ $line-height-base: 1.5 !default;
 $headings-font-family: 'Raleway' !default;
 // $headings-font-weight: 100 !default;
 $headings-line-height: 1.2 !default;
-$headings-color: $pink !default;
+$headings-color: $teal !default;
 
 // $display1-size: 3rem !default;
 // $display2-size: 2.1rem !default;

@@ -5,7 +5,7 @@ import Icon from "react-simple-icons"
 import footerStyles from "./footer.module.scss"
 
 const Footer = () => (
-  <footer className="container my-4">
+  <footer className={footerStyles.footer + " container"}>
     <div className="row align-items-center">
       <div className="col-md-6 text-center text-md-left">
         <ul className={footerStyles.social}>

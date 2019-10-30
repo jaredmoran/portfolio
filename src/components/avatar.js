@@ -9,7 +9,7 @@ const Avatar = () => {
     query {
       avatar: file(relativePath: { eq: "jared-zoom.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }

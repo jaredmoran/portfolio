@@ -47,16 +47,14 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
 
-      <div className="row align-items-center">
-        <div className="col-12 col-md-10">
-          <h1 className="display-1">Jared Moran</h1>
-        </div>
-        <div className="d-none d-md-block col-md-2">
+      <div className="text-center">
+        <span className="d-none d-md-block">
           <Avatar />
-        </div>
+        </span>
+        <h1 className="display-1">Jared Moran</h1>
+        <p><strong>Father / Husband / Friend / Engineer / Web Developer</strong></p>
+        <p><strong>Visalia, CA, USA</strong></p>
       </div>
-
-      <p><strong>Father / Husband / Friend / Engineer / Web Developer</strong></p>
 
       <h2 className="mt-5 mb-4">About Me</h2>
       <p>
@@ -73,6 +71,7 @@ const IndexPage = () => {
           😄
         </span>
       </p>
+
 
       <h2 className="mt-5 pt-5 mb-4">Recent Work</h2>
 
