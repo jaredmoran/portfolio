@@ -87,7 +87,9 @@ const IndexPage = () => {
                 ...workData.pensoCoImage.childImageSharp.fluid,
                 aspectRatio: 4 / 3,
               }}
+              alt="Penso Co. screenshot"
             />
+            <span className="sr-only">Visit Penso Co. site</span>
           </a>
           <figcaption>
             <h3>Penso Co.</h3>
@@ -117,7 +119,9 @@ const IndexPage = () => {
                 ...workData.raheemImage.childImageSharp.fluid,
                 aspectRatio: 4 / 3,
               }}
+              alt="Raheem homepage screenshot"
             />
+            <span className="sr-only">Visit Raheem site</span>
           </a>
           <figcaption>
             <h3>Raheem</h3>
@@ -148,7 +152,9 @@ const IndexPage = () => {
                 ...workData.teachingBooksImage.childImageSharp.fluid,
                 aspectRatio: 4 / 3,
               }}
+              alt="TeachingBooks homepage screenshot"
             />
+            <span className="sr-only">Visit TeachingBooks site</span>
           </a>
           <figcaption>
             <h3>TeachingBooks</h3>
@@ -179,7 +185,9 @@ const IndexPage = () => {
                 ...workData.rideReportImage.childImageSharp.fluid,
                 aspectRatio: 4 / 3,
               }}
+              alt="Ride Report homepage screenshot"
             />
+            <span className="sr-only">Visit Ride Report site</span>
           </a>
           <figcaption>
             <h3>Ride Report</h3>
