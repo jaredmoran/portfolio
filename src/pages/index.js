@@ -31,9 +31,7 @@ const IndexPage = () => {
           }
         }
       }
-      pensoCoImage: file(
-        relativePath: { eq: "pensoco-thumbnail.png" }
-      ) {
+      pensoCoImage: file(relativePath: { eq: "pensoco-thumbnail.png" }) {
         childImageSharp {
           fluid(maxWidth: 600, cropFocus: NORTH) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -52,8 +50,12 @@ const IndexPage = () => {
           <Avatar />
         </span>
         <h1 className="display-1">Jared Moran</h1>
-        <p><strong>Father / Husband / Friend / Engineer / Web Developer</strong></p>
-        <p><strong>Visalia, CA, USA</strong></p>
+        <p>
+          <strong>Father / Husband / Friend / Engineer / Web Developer</strong>
+        </p>
+        <p>
+          <strong>Visalia, CA, USA</strong>
+        </p>
       </div>
 
       <h2 className="mt-5 mb-4">About Me</h2>
@@ -72,16 +74,35 @@ const IndexPage = () => {
         </span>
       </p>
 
+      <h2 className="mt-5 pt-5 mb-4">Currently</h2>
+      <p>
+        Working with{" "}
+        <a
+          href="https://www.blueingreendigital.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="curtains"
+        >
+          BlueInGreen
+        </a>{" "}
+        to build and improve numerous internal applications for{" "}
+        <strong className="client">Netflix</strong>.
+        Also working with <a
+          href="https://penso.co"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="curtains"
+        >
+          Penso Co.
+        </a>{" "}
+        on improvements to a custom recruiting tool for <strong className="client">Atlassian</strong>.
+      </p>
 
-      <h2 className="mt-5 pt-5 mb-4">Recent Work</h2>
+      <h2 className="mt-5 pt-5 mb-4">Recent Work (that I can share)</h2>
 
       <div className="row">
-      <div className="work col-md-6">
-          <a
-            href="https://penso.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <div className="work col-md-6">
+          <a href="https://penso.co" target="_blank" rel="noopener noreferrer">
             <Img
               fluid={{
                 ...workData.pensoCoImage.childImageSharp.fluid,
@@ -94,7 +115,8 @@ const IndexPage = () => {
           <figcaption>
             <h3>Penso Co.</h3>
             <p>
-              New portofolio site to showcase new work, a new studio, and some new faces.
+              New portofolio site to showcase new work, a new studio, and some
+              new faces.
             </p>
             <p>
               <a
@@ -220,18 +242,23 @@ const IndexPage = () => {
           >
             Penso Co.
           </a>{" "}
-          Check out the portfolio for more detail of our work.
+          Check out the portfolio for more detail.
         </small>
       </p>
 
       <h2 className="mt-5 pt-5 mb-4">Work History</h2>
 
       <div className="job">
+        <h3>Independent contractor</h3>
+        <time>2020-Present</time>
+      </div>
+
+      <div className="job">
         <h3>Penso Co.</h3>
         <p>
           <strong>Technology Lead</strong>
         </p>
-        <time>2018-Present</time>
+        <time>2018-2020</time>
         <p>
           <a
             href="https://penso.co"
