@@ -38,6 +38,15 @@ const IndexPage = () => {
           }
         }
       }
+      atlassianImage: file(
+        relativePath: { eq: "plant-your-code-thumbnail.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 600, cropFocus: NORTH) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
     }
   `)
 
@@ -60,7 +69,7 @@ const IndexPage = () => {
 
       <h2 className="mt-5 mb-4">About Me</h2>
       <p>
-        I enjoy making designs a reality. I am a UI/UX engineer who specializes
+        I enjoy making designs a reality. I am an engineer who specializes
         in taking responsible, thoughtful designs and turning them into
         responsive, user-friendly experiences using HTML, CSS and JavaScript.
       </p>
@@ -86,21 +95,48 @@ const IndexPage = () => {
           BlueInGreen
         </a>{" "}
         to build and improve numerous internal applications for{" "}
-        <strong className="client">Netflix</strong>.
-        Also working with <a
-          href="https://penso.co"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="curtains"
-        >
-          Penso Co.
-        </a>{" "}
-        on improvements to a custom recruiting tool for <strong className="client">Atlassian</strong>.
+        <strong className="client">Netflix</strong>. The primary tech that I am
+        working with is React/NextJS/Node/TypeScript.
       </p>
 
       <h2 className="mt-5 pt-5 mb-4">Recent Work (that I can share)</h2>
 
       <div className="row">
+        <div className="work col-md-6">
+          <a
+            href="https://plantyourcode.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              fluid={{
+                ...workData.atlassianImage.childImageSharp.fluid,
+                aspectRatio: 4 / 3,
+              }}
+              alt="Plant Your Code screenshot"
+            />
+            <span className="sr-only">Visit Plant Your Code</span>
+          </a>
+          <figcaption>
+            <h3>Atlassian - Plant Your Code, v2</h3>
+            <p>
+              Penso Co. was tasked with making some UX improvements to
+              Atlassian's PYC coding challenge. We adjusted the design, reworked
+              the application flow and elevated the real winners of the coding
+              challenges - the charities.
+            </p>
+            <p>
+              <a
+                href="https://plantyourcode.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="curtains"
+              >
+                Visit Site
+              </a>
+            </p>
+          </figcaption>
+        </div>
         <div className="work col-md-6">
           <a href="https://penso.co" target="_blank" rel="noopener noreferrer">
             <Img
