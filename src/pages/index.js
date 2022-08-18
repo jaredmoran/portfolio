@@ -47,6 +47,20 @@ const IndexPage = () => {
           }
         }
       }
+      leportalImage: file(relativePath: { eq: "netflix-leportal.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600, cropFocus: NORTH) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      megaphoneImage: file(relativePath: { eq: "megaphone-thumb.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600, cropFocus: NORTH) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
     }
   `)
 
@@ -69,9 +83,9 @@ const IndexPage = () => {
 
       <h2 className="mt-5 mb-4">About Me</h2>
       <p>
-        I enjoy making designs a reality. I am an engineer who specializes
-        in taking responsible, thoughtful designs and turning them into
-        responsive, user-friendly experiences using HTML, CSS and JavaScript.
+        I enjoy making designs a reality. I am an engineer who specializes in
+        taking responsible, thoughtful designs and turning them into responsive,
+        user-friendly experiences using HTML, CSS and JavaScript.
       </p>
       <p>
         When I&rsquo;m not working it&rsquo;s a pretty safe bet that
@@ -87,16 +101,14 @@ const IndexPage = () => {
       <p>
         Working with{" "}
         <a
-          href="https://www.blueingreendigital.com/"
+          href="https://instrument.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="curtains"
         >
-          BlueInGreen
+          Instrument
         </a>{" "}
-        to build and improve numerous internal applications for{" "}
-        <strong className="client">Netflix</strong>. The primary tech that I am
-        working with is React/NextJS/Node/TypeScript.
+        on some <strong className="client">Google</strong> work.
       </p>
 
       <h2 className="mt-5 pt-5 mb-4">Recent Work (that I can share)</h2>
@@ -104,19 +116,82 @@ const IndexPage = () => {
       <div className="row">
         <div className="work col-md-6">
           <a
-            href="https://plantyourcode.com"
+            href="https://megaphone.spotify.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Img
               fluid={{
-                ...workData.atlassianImage.childImageSharp.fluid,
+                ...workData.megaphoneImage.childImageSharp.fluid,
                 aspectRatio: 4 / 3,
               }}
-              alt="Plant Your Code screenshot"
+              alt="Megaphone screenshot"
             />
-            <span className="sr-only">Visit Plant Your Code</span>
+            <span className="sr-only">Visit Megaphone site</span>
           </a>
+          <figcaption>
+            <h3>Megaphone by Spotify</h3>
+            <p>
+              With Penso Co (engineering) and The Brigade (design), I built out
+              a shiny new site for the Megaphone team to help market their great
+              product. Primary tech: NextJS/React and Contentful.
+            </p>
+            <p>
+              <a
+                href="https://megaphone.spotify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="curtains"
+              >
+                Visit Site
+              </a>
+            </p>
+          </figcaption>
+        </div>
+        <div className="work col-md-6">
+          <a
+            href="https://leportal.netflix.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              fluid={{
+                ...workData.leportalImage.childImageSharp.fluid,
+                aspectRatio: 4 / 3,
+              }}
+              alt="LE Portal screenshot"
+            />
+            <span className="sr-only">Visit Netflix LE Portal</span>
+          </a>
+          <figcaption>
+            <h3>Netflix - Law Enforcement Request Portal</h3>
+            <p>
+              Via BlueInGreen, we built out an application for law enforcement
+              officials in 20+ countries to submit formal, legal requests to
+              Netflix in order to assist in ongoing investigations. I handled
+              the front end while working with another BiG engineer who built
+              out our API. Primary tech: NextJS/React.
+            </p>
+            <p>
+              <a
+                href="https://leportal.netflix.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="curtains"
+              >
+                Visit Site
+              </a>
+            </p>
+          </figcaption>
+        </div>
+        <div className="work col-md-6">
+          <Img
+            fluid={{
+              ...workData.atlassianImage.childImageSharp.fluid,
+              aspectRatio: 4 / 3,
+            }}
+            alt="Plant Your Code screenshot"
+          />
           <figcaption>
             <h3>Atlassian - Plant Your Code, v2</h3>
             <p>
@@ -124,16 +199,6 @@ const IndexPage = () => {
               Atlassian's PYC coding challenge. We adjusted the design, reworked
               the application flow and elevated the real winners of the coding
               challenges - the charities.
-            </p>
-            <p>
-              <a
-                href="https://plantyourcode.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="curtains"
-              >
-                Visit Site
-              </a>
             </p>
           </figcaption>
         </div>
@@ -233,54 +298,22 @@ const IndexPage = () => {
           </figcaption>
         </div>
         <div className="work col-md-6">
-          <a
-            href="https://ridereport.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Img
-              fluid={{
-                ...workData.rideReportImage.childImageSharp.fluid,
-                aspectRatio: 4 / 3,
-              }}
-              alt="Ride Report homepage screenshot"
-            />
-            <span className="sr-only">Visit Ride Report site</span>
-          </a>
+          <Img
+            fluid={{
+              ...workData.rideReportImage.childImageSharp.fluid,
+              aspectRatio: 4 / 3,
+            }}
+            alt="Ride Report homepage screenshot"
+          />
           <figcaption>
             <h3>Ride Report</h3>
             <p>
               Marketing site refresh for the Portland-based micromobility
               startup.
             </p>
-            <p>
-              <a
-                href="https://ridereport.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="curtains"
-              >
-                Visit Site
-              </a>
-            </p>
           </figcaption>
         </div>
       </div>
-
-      <p>
-        <small className="mt-4 d-block">
-          All work listed here has been completed via{" "}
-          <a
-            href="https://penso.co"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="curtains"
-          >
-            Penso Co.
-          </a>{" "}
-          Check out the portfolio for more detail.
-        </small>
-      </p>
 
       <h2 className="mt-5 pt-5 mb-4">Work History</h2>
 
