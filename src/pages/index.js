@@ -99,16 +99,7 @@ const IndexPage = () => {
 
       <h2 className="mt-5 pt-5 mb-4">Currently</h2>
       <p>
-        Working with{" "}
-        <a
-          href="https://instrument.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="curtains"
-        >
-          Instrument
-        </a>{" "}
-        on some <strong className="client">Google</strong> work.
+        Open for Q1/Q2 2023 contract work. My rate is $135/hr. Contact me at my first and last name at gmail.
       </p>
 
       <h2 className="mt-5 pt-5 mb-4">Recent Work (that I can share)</h2>
@@ -346,16 +337,6 @@ const IndexPage = () => {
           <strong>Senior Engineer</strong>
         </p>
         <time>2014-2018</time>
-        <p>
-          <a
-            href="https://cozy.co"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="curtains"
-          >
-            Visit Site
-          </a>
-        </p>
       </div>
 
       <div className="job">
