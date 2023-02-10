@@ -99,7 +99,11 @@ const IndexPage = () => {
 
       <h2 className="mt-5 pt-5 mb-4">Currently</h2>
       <p>
-        Open for Q1/Q2 2023 contract work. My rate is $135/hr. Contact me at my first and last name at gmail.
+        Currently working with <a
+            href="https://weareteamstudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Team Studio</a>, potentially open for Q2 2023 contract work. My rate is $135/hr. Contact me at my first and last name at gmail.
       </p>
 
       <h2 className="mt-5 pt-5 mb-4">Recent Work (that I can share)</h2>
