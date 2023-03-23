@@ -103,7 +103,7 @@ const IndexPage = () => {
             href="https://weareteamstudio.com"
             target="_blank"
             rel="noopener noreferrer"
-          >Team Studio</a>, potentially open for Q2 2023 contract work. My rate is $135/hr. Contact me at my first and last name at gmail.
+          >Team Studio</a>, potentially open for Q2 2023 contract work. My rate is $115/hr. Contact me at my first and last name at gmail.
       </p>
 
       <h2 className="mt-5 pt-5 mb-4">Recent Work (that I can share)</h2>
