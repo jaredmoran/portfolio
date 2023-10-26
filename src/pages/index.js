@@ -61,6 +61,13 @@ const IndexPage = () => {
           }
         }
       }
+      googleImage: file(relativePath: { eq: "google-thumb.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600, cropFocus: NORTH) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
     }
   `)
 
@@ -99,16 +106,54 @@ const IndexPage = () => {
 
       <h2 className="mt-5 pt-5 mb-4">Currently</h2>
       <p>
-        Currently working for <a
-            href="https://commsor.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Commsor</a> as a Full Stack Engineer, not taking on any new projects at this time.
+        Currently working for{" "}
+        <a href="https://commsor.com" target="_blank" rel="noopener noreferrer">
+          Commsor
+        </a>{" "}
+        as a Full Stack Engineer on the hyper-focused networking application{" "}
+        <a href="https://matcha.so" target="_blank" rel="">
+          Matcha
+        </a>
+        , not taking on any new projects at this time.
       </p>
 
       <h2 className="mt-5 pt-5 mb-4">Recent Work (that I can share)</h2>
 
       <div className="row">
+        <div className="work col-md-6">
+          <a
+            href="https://design.google/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              fluid={{
+                ...workData.googleImage.childImageSharp.fluid,
+                aspectRatio: 4 / 3,
+              }}
+              alt="Google Design screenshot"
+            />
+            <span className="sr-only">Visit Google Design site</span>
+          </a>
+          <figcaption>
+            <h3>Google Design</h3>
+            <p>
+              With Instrument, I helped build out a fully customizable website
+              to showcase Design at Google. Primary tech: NextJS/React and
+              Wagtail.
+            </p>
+            <p>
+              <a
+                href="https://design.google/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="curtains"
+              >
+                Visit Site
+              </a>
+            </p>
+          </figcaption>
+        </div>
         <div className="work col-md-6">
           <a
             href="https://megaphone.spotify.com"
@@ -125,7 +170,7 @@ const IndexPage = () => {
             <span className="sr-only">Visit Megaphone site</span>
           </a>
           <figcaption>
-            <h3>Megaphone by Spotify</h3>
+            <h3>Google Design</h3>
             <p>
               With Penso Co (engineering) and The Brigade (design), I built out
               a shiny new site for the Megaphone team to help market their great
@@ -314,8 +359,18 @@ const IndexPage = () => {
 
       <div className="job">
         <h3>Commsor</h3>
-        <p><strong>Full Stack Engineer</strong></p>
+        <p>
+          <strong>Full Stack Engineer (Matcha)</strong>
+        </p>
         <time>2023-Present</time>
+      </div>
+
+      <div className="job">
+        <h3>Netflix</h3>
+        <p>
+          <strong>Software Engineer (Contract)</strong>
+        </p>
+        <time>April 2020 - May 2022</time>
       </div>
 
       <div className="job">
