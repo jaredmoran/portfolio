@@ -170,7 +170,7 @@ const IndexPage = () => {
             <span className="sr-only">Visit Megaphone site</span>
           </a>
           <figcaption>
-            <h3>Google Design</h3>
+            <h3>Megaphone by Spotify</h3>
             <p>
               With Penso Co (engineering) and The Brigade (design), I built out
               a shiny new site for the Megaphone team to help market their great
