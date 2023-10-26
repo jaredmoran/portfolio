@@ -111,7 +111,7 @@ const IndexPage = () => {
           Commsor
         </a>{" "}
         as a Full Stack Engineer on the hyper-focused networking application{" "}
-        <a href="https://matcha.so" target="_blank" rel="">
+        <a href="https://matcha.so" target="_blank" rel="noopener noreferrer">
           Matcha
         </a>
         , not taking on any new projects at this time.
