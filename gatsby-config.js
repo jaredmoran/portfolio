@@ -14,7 +14,8 @@ module.exports = {
           "G-709WJZ6QW5", // Google Analytics / GA
         ],
       },
-    }`gatsby-plugin-react-helmet`,
+    },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
