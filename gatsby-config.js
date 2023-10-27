@@ -3,17 +3,18 @@ module.exports = {
     title: `Jared Moran`,
     description: `This is my personal portfolio. I'm an engineer based in Visalia, California USA.`,
     author: `@jaredmoran`,
-    siteUrl: `https://jaredmoran.com`
+    siteUrl: `https://jaredmoran.com`,
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-734423-11",
-        head: false
-      }
-    },
-    `gatsby-plugin-react-helmet`,
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-709WJZ6QW5", // Google Analytics / GA
+        ],
+      },
+    }`gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,13 +25,13 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Raleway:900|Roboto']
-        }
-      }
+          families: ["Raleway:900|Roboto"],
+        },
+      },
     },
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
   ],
 }
