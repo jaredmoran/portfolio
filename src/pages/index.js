@@ -106,11 +106,8 @@ const IndexPage = () => {
 
       <h2 className="mt-5 pt-5 mb-4">Currently</h2>
       <p>
-        Currently working for{" "}
-        <a href="https://commsor.com" target="_blank" rel="noopener noreferrer">
-          Commsor
-        </a>{" "}
-        as a Full Stack Engineer on the hyper-focused networking application{" "}
+        Currently working for as a Senior Software Engineer on the hyper-focused
+        networking application{" "}
         <a href="https://matcha.so" target="_blank" rel="noopener noreferrer">
           Matcha
         </a>
