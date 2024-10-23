@@ -1,6 +1,5 @@
+import { SiGithub, SiLinkedin } from "@icons-pack/react-simple-icons"
 import React from "react"
-
-import Icon from "react-simple-icons"
 
 const Footer = () => (
   <footer className="mx-auto max-w-5xl my-20 px-5 text-sm md:text-base pb-32">
@@ -14,8 +13,7 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon
-                name="github"
+              <SiGithub
                 height="40px"
                 width="40px"
                 className="text-pink-dark transition-colors hover:text-pink"
@@ -24,13 +22,12 @@ const Footer = () => (
           </li>
           <li className="">
             <a
-              href="https://www.linkedin.com/in/jared-moran-575a1785/"
+              href="https://www.linkedin.com/in/therealjaredmoran/"
               title="LinkedIn Profile"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon
-                name="linkedin"
+              <SiLinkedin
                 height="40px"
                 width="40px"
                 className="text-pink-dark transition-colors hover:text-pink"
