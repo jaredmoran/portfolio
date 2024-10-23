@@ -1,10 +1,12 @@
 import Image from "next/image"
 
+import JaredImage from "@/assets/jared-zoom.jpg"
+
 export const Avatar = () => {
   return (
     <div className="hidden md:block">
       <Image
-        src="/jared-zoom.jpg"
+        src={JaredImage}
         alt="Jared Moran"
         width={120}
         height={120}
