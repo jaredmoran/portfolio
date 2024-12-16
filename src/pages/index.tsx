@@ -70,27 +70,15 @@ export default function Home() {
               Currently
             </h2>
             <p>
-              Currently working for as a Senior Software Engineer on the
-              hyper-focused networking application{" "}
+              Currently working as a UI Developer at{" "}
               <a
-                href="https://matcha.so"
+                href="https://bestomer.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink underline hover:text-pink-dark"
               >
-                Matcha
-              </a>{" "}
-              and owner of{" "}
-              <a
-                href="https://teapot.matcha.so"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-pink underline hover:text-pink-dark"
-              >
-                Teapot
+                Bestomer
               </a>
-              , our component library and design system. Not taking on any new
-              projects at this time.
             </p>
           </div>
           <div className="flex flex-col gap-6">
@@ -172,9 +160,14 @@ export default function Home() {
 
             <div className="flex flex-col gap-10">
               <Job
+                company="Bestomer"
+                title="UI Developer"
+                dates="2024 - Present"
+              />
+              <Job
                 company="Matcha"
                 title="Senior Software Engineer"
-                dates="2023 - Present"
+                dates="2023 - 2024"
               />
               <Job
                 company="Netflix"
