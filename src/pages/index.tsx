@@ -4,6 +4,7 @@ import { Project } from "@/components/Project"
 import { Raleway, Roboto } from "next/font/google"
 
 import GoogleDesignImage from "@/assets/google-thumb.png"
+import MatchaImage from "@/assets/matcha-marketing-site.png"
 import MegaphoneImage from "@/assets/megaphone-thumb.png"
 import NetflixImage from "@/assets/netflix-leportal.png"
 import AtlassianImage from "@/assets/plant-your-code-thumbnail.png"
@@ -88,9 +89,16 @@ export default function Home() {
 
             <div className="flex flex-col md:grid md:grid-cols-2 gap-10 gap-y-20 justify-center">
               <Project
+                title="Matcha"
+                description="As a Senior Software Engineer, I helped build and maintain Matcha's web app and content marketing platform that empowers brands to grow their business. Primary tech: Next.js, TypeScript, tRPC, Prisma."
+                url="https://matcha.so"
+                image={MatchaImage}
+              />
+
+              <Project
                 title="Google Design"
                 description="With Instrument, I helped build out a fully customizable website
-                  to showcase Design at Google. Primary tech: NextJS/React and
+                  to showcase Design at Google. Primary tech: Next.js/React and
                   Wagtail."
                 url="https://design.google"
                 image={GoogleDesignImage}
@@ -98,7 +106,7 @@ export default function Home() {
 
               <Project
                 title="Megaphone by Spotify"
-                description="With Penso Co (engineering) and The Brigade (design), I built out a shiny new site for the Megaphone team to help market their great product. Primary tech: NextJS/React and Contentful."
+                description="With Penso Co (engineering) and The Brigade (design), I built out a shiny new site for the Megaphone team to help market their great product. Primary tech: Next.js/React and Contentful."
                 url="https://megaphone.spotify.com"
                 image={MegaphoneImage}
               />
@@ -109,7 +117,7 @@ export default function Home() {
                   officials in 20+ countries to submit formal, legal requests to
                   Netflix in order to assist in ongoing investigations. I handled
                   the front end while working with another BiG engineer who built
-                  out our API. Primary tech: NextJS/React."
+                  out our API. Primary tech: Next.js/React."
                 url="https://leportal.netflix.com"
                 image={NetflixImage}
               />
